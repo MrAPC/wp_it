@@ -51,12 +51,12 @@
             ]
         },
         {
-            "Frage": "Wie heißt ein ganz lieber deutscher Caster?",
+            "Frage": "Welcher Champion ist eine unsichtbare Ratte?",
             "type": "eingabe",
-            "Antwort": "Maxim"
+            "Antwort": "Twitch"
         },
         {
-            "Frage": "Welche Elo hat Peer?",
+            "Frage": "Welche Elo ist God-Tier?",
             "type": "auswahl",
             "Antworten": [
                 {
@@ -68,10 +68,20 @@
                     "richtig": false
                 },
                 {
-                    "Antwort": "Bronze 3",
+                    "Antwort": "Bronze 5",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Wood 5",
                     "richtig": true
                 }
             ]
+        },
+        {
+            "Frage": "Welche MMR hat man ungefähr, wenn man zum ersten Mal in einer Liga platziert wird?",
+            "type": "schaetzung",
+            "Antwort": 1250,
+            "Toleranz": 150
         }
     ]
 }
