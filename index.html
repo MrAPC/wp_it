@@ -93,17 +93,30 @@
             </div>
 
         </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="Quiz"></div>
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery/jquery-3-3-1.min.js"></script>
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/quizjs.js"></script>
 
     <script>
         $(function () {
+            /*
             $.getJSON("quiz/quiz1.json", function (json) {
                 console.log(json); // this will show the info it in firebug console
+            });
+            */
+
+            document.getElementById('Quiz').quizJS({
+                title: 'Quiz nummer 1',
+                fragen: 'quiz/quiz1.json'
             });
         })
     </script>

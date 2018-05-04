@@ -6,14 +6,14 @@
 		{
 			"Frage": "How much is the fish",
 			"type": "auswahl",
-			"Antworten" : [
+			"Antworten": [
 				{
-				"Antwort": "Hyper Hyper",
-				"richtig": true
+					"Antwort": "Hyper Hyper",
+					"richtig": true
 				},
 				{
-				"Antwort": "10 Euro",
-				"richtig": false,
+					"Antwort": "10 Euro",
+					"richtig": false
 				}
 			]
 		},
