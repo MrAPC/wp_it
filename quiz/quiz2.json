@@ -55,18 +55,24 @@
 			"type": "auswahl",
 			"Antworten": [
 				{
-					"Antwort": "Albus Dumbledore",
+					"Antwort": "Österreich",
 					"richtig": false
 				},
 				{
-					"Antwort": "Horst Seehofer",
+					"Antwort": "Polen",
 					"richtig": false
 				},
 				{
-					"Antwort": "Angela Merkel",
+					"Antwort": "Uganda",
 					"richtig": true
 				}
 			]
+		},
+		{
+			"Frage": "Wie viele Farben hat die Deutsche Flagge?",
+			"type": "schaetzung",
+			"Antwort": 3,
+			"Toleranz": 0
 		}
 	]
 }

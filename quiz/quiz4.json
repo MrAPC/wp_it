@@ -1,0 +1,77 @@
+{
+    "Namen": "League of Legends-Quiz",
+    "Autor": "Hendrik",
+    "Schwierigkeit": "3",
+    "Fragen": [
+        {
+            "Frage": "Welcher Champion hat Krebs im Anus?",
+            "type": "auswahl",
+            "Antworten": [
+                {
+                    "Antwort": "Garen",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Orianna",
+                    "richtig": false
+                },
+                {
+                    "Anwort": "Yasuo",
+                    "richtig": true
+                }
+            ]
+        },
+        {
+            "Frage": "Wie heißt das gefährlichste neutrale Monster in der Kluft?",
+            "type": "eingabe",
+            "Antwort": "Baron Nashor"
+        },
+        {
+            "Frage": "Wie viele Spieler können maximal zusammen in eine Queue gehen?",
+            "type": "schaetzung",
+            "Antwort": 5,
+            "Toleranz": 0
+        },
+        {
+            "Frage": "Welche Aufgabe hat ein Supporter?",
+            "type": "auswahl",
+            "Antworten": [
+                {
+                    "Antwort": "Kills stealen",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Adc unterstützen",
+                    "richtig": true
+                },
+                {
+                    "Anwort": "Gegner intfeeden",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "Frage": "Wie heißt ein ganz lieber deutscher Caster?",
+            "type": "eingabe",
+            "Antwort": "Maxim"
+        },
+        {
+            "Frage": "Welche Elo hat Peer?",
+            "type": "auswahl",
+            "Antworten": [
+                {
+                    "Antwort": "Plat 4",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Silber 2",
+                    "richtig": false
+                },
+                {
+                    "Anwort": "Bronze 3",
+                    "richtig": true
+                }
+            ]
+        }
+    ]
+}

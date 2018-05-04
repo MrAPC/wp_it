@@ -1,0 +1,100 @@
+{
+    "Namen": "Harry Potter-Quiz",
+    "Autor": "Hendrik",
+    "Schwierigkeit": "7",
+    "Fragen": [
+        {
+            "Frage": "Zu welchen Haus wurde Hermine zugeordnet?",
+            "type": "auswahl",
+            "Antworten": [
+                {
+                    "Antwort": "Gryffindor",
+                    "richtig": true
+                },
+                {
+                    "Antwort": "Hufflepuff",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Slytherin",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Ravenclaw",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "Frage": "Wer war der Bösewicht in Harry Potter?",
+            "type": "eingabe",
+            "Antwort": "Lord Voldemort"
+        },
+        {
+            "Frage": "Wann wurde Hogwarts gegründet?",
+            "type": "schaetzung",
+            "Antwort": 1000,
+            "Toleranz": 100
+        },
+        {
+            "Frage": "Welches Bier kann man in Hogsmead gut trinken?",
+            "type": "eingabe",
+            "Antwort": "Butterbier"
+        },
+        {
+            "Frage": "Wer ordnet die Schüler in Hogwarts zu?",
+            "type": "auswahl",
+            "Antworten": [
+                {
+                    "Antwort": "Sprechender Hut",
+                    "richtig": true
+                },
+                {
+                    "Antwort": "Schreiender Hut",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Flüsternder Hut",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Ein dicker Turban",
+                    "richtig": false
+                }
+            ]
+        },
+        {
+            "Frage": "Wie ist der zweite Vorname von Harry?",
+            "type": "eingabe",
+            "Antwort": "James"
+        },
+        {
+            "Frage": "Wie alt ist Hagrid im ersten Teil?",
+            "type": "schaetzung",
+            "Antwort": 63,
+            "Toleranz": 10
+        },
+        {
+            "Frage": "Wie heißt die Giftziege aus dem fünften Teil?",
+            "type": "auswahl",
+            "Antworten": [
+                {
+                    "Antwort": "Joanne Kathleen Rowling",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Minerva McGonagall",
+                    "richtig": false
+                },
+                {
+                    "Antwort": "Dolores Jane Umbridge",
+                    "richtig": true
+                },
+                {
+                    "Antwort": "Draco Malfoy",
+                    "richtig": false
+                }
+            ]
+        }
+    ]
+}
