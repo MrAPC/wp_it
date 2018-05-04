@@ -1,0 +1,72 @@
+{
+	"Namen": "Deutschland-Quiz",
+	"Autor": "Hendrik",
+	"Schwierigkeit": "1",
+	"Fragen": [
+		{
+			"Frage": "Wie viele Bundesländer hat Deutschland?",
+			"type": "auswahl",
+			"Antworten": [
+				{
+					"Antwort": "16",
+					"richtig": true
+				},
+				{
+					"Antwort": "15",
+					"richtig": false
+				},
+				{
+					"Antwort": "14",
+					"richtig": false
+				}
+			]
+		},
+		{
+			"Frage": "Wie heißt die Hauptstadt von Deutschland?",
+			"type": "eingabe",
+			"Antwort": "Berlin"
+		},
+		{
+			"Frage": "Wie viele Menschen leben in Deutschland?",
+			"type": "schaetzung",
+			"Antwort": 82670000,
+			"Toleranz": 1000000
+		},
+		{
+			"Frage": "Wer ist aktuell deutsche/r Bundeskanzler/in?",
+			"type": "auswahl",
+			"Antworten": [
+				{
+					"Antwort": "Albus Dumbledore",
+					"richtig": false
+				},
+				{
+					"Antwort": "Horst Seehofer",
+					"richtig": false
+				},
+				{
+					"Antwort": "Angela Merkel",
+					"richtig": true
+				}
+			]
+		},
+		{
+			"Frage": "Welches ist kein Nachbarland von Deutschland?",
+			"type": "auswahl",
+			"Antworten": [
+				{
+					"Antwort": "Albus Dumbledore",
+					"richtig": false
+				},
+				{
+					"Antwort": "Horst Seehofer",
+					"richtig": false
+				},
+				{
+					"Antwort": "Angela Merkel",
+					"richtig": true
+				}
+			]
+		}
+	]
+}
