@@ -1,0 +1,32 @@
+{
+	"Namen": "Fragebogen 1",
+	"Autor": "Peer",
+	"Schwierigkeit": "5",
+	"Fragen": [
+		{
+			"Frage": "How much is the fish",
+			"type": "auswahl",
+			"Antworten" : [
+				{
+				"Antwort": "Hyper Hyper",
+				"richtig": true
+				},
+				{
+				"Antwort": "10 Euro",
+				"richtig": false,
+				}
+			]
+		},
+		{
+			"Frage": "Wie heißt die Landeshauptstadt von Schleswig-Holstein",
+			"type": "eingabe",
+			"Antwort": "Kiel"
+		},
+		{
+			"Frage": "Wie viele Menschen leben in Deutschland",
+			"type": "schaetzung",
+			"Antwort": 82670000,
+			"Toleranz": 1000000
+		}
+	]
+}
