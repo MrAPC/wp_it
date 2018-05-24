@@ -1,0 +1,64 @@
+{
+	"Namen": "Bundesliga-Quiz",
+	"Autor": "Hendrik",
+	"Schwierigkeit": "2",
+	"Fragen": [
+		{
+			"Frage": "Wie oft war Werder Bremen Deutscher Meister?",
+			"type": "auswahl",
+			"Antworten": [
+				{
+					"Antwort": "Zwei Mal",
+					"richtig": false
+				},
+				{
+					"Antwort": "Dreizehn Mal",
+					"richtig": false
+				},
+				{
+					"Antwort": "Vier Mal",
+					"richtig": true
+				}
+			]
+		},
+		{
+			"Frage": "Aus welcher Stadt kommt der Rekordmeister?",
+			"type": "eingabe",
+			"Antwort": "München"
+		},
+		{
+			"Frage": "Wie viele deutsche Vereine spielen im nächsten Jahr in der Championsleague mit?",
+			"type": "schaetzung",
+			"Antwort": 4,
+			"Toleranz": 0
+		},
+		{
+			"Frage": "Welcher Verein stieg in der Saison 17/18 zum ersten Mal in die zweite Liga ab?",
+			"type": "eingabe",
+			"Antwort": "Hamburger SV"
+		},
+		{
+			"Frage": "In welchen Verband ist die Bundesliga eingegliedert?",
+			"type": "eingabe",
+			"Antwort": "DFL"
+		},
+		{
+			"Frage": "Viele Vereine sind in der Saison 17/18 abgestiegen?",
+			"type": "auswahl",
+			"Antworten": [
+				{
+					"Antwort": "Zwei",
+					"richtig": true
+				},
+				{
+					"Antwort": "Drei",
+					"richtig": false
+				},
+				{
+					"Antwort": "Keiner wegen Sonderausfall",
+					"richtig": false
+				}
+			]
+		}
+	]
+}
