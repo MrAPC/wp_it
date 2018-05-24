@@ -17,6 +17,7 @@
         + Frage
     ]
 */
+
 Element.prototype.quizJS = function (params) {
 
     var allefragen = [];
@@ -29,7 +30,7 @@ Element.prototype.quizJS = function (params) {
 
     var kartenkopf = document.createElement("div");
     kartenkopf.classList.add("card-header");
-    kartenkopf.innerHTML = params.title;
+    //kartenkopf.innerHTML = params.title;
     karte.append(kartenkopf);
 
     var kartenkoerper = document.createElement("div");
@@ -135,5 +136,5 @@ Element.prototype.quizJS = function (params) {
             }
         });
     })
-
-}
+    return true;
+};
