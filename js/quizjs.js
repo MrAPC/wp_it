@@ -107,7 +107,7 @@ Element.prototype.quizJS = function (params) {
                     $(this).addClass("is-invalid");
                     var wrongcallback = document.createElement("div")
                     wrongcallback.classList.add("invalid-feedback");
-                    wrongcallback.innerText = "Das war falsch";
+                    wrongcallback.innerText = "Das war falsch. Richtige Antwort: " + richtig[0].Antwort;
                     $(this).parent().append(wrongcallback);
                 }
             } else if (fr.type == "eingabe") {
@@ -118,7 +118,7 @@ Element.prototype.quizJS = function (params) {
                     $(this).addClass("is-invalid");
                     var wrongcallback = document.createElement("div")
                     wrongcallback.classList.add("invalid-feedback");
-                    wrongcallback.innerText = "Das war falsch";
+                    wrongcallback.innerText = "Das war falsch. Richtige Antwort: " + richtig;
                     $(this).parent().append(wrongcallback);
                 }
             } else if (fr.type == "schaetzung") {
@@ -129,7 +129,7 @@ Element.prototype.quizJS = function (params) {
                     $(this).addClass("is-invalid");
                     var wrongcallback = document.createElement("div")
                     wrongcallback.classList.add("invalid-feedback");
-                    wrongcallback.innerText = "Das war falsch";
+                    wrongcallback.innerText = "Das war falsch. Richtige Antwort: " + richtig;
                     $(this).parent().append(wrongcallback);
                 }
             }
