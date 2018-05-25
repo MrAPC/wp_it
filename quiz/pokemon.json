@@ -1,0 +1,90 @@
+{
+	"Namen": "Pokemon-Quiz",
+	"Autor": "Hendrik",
+	"Schwierigkeit": "8",
+	"Fragen": [
+		{
+			"Frage": "Wie heißt die Spezialedition der dritten Generation?",
+			"type": "auswahl",
+			"Antworten": [
+				{
+					"Antwort": "Smaragd",
+					"richtig": true
+				},
+				{
+					"Antwort": "Diadem",
+					"richtig": false
+				},
+				{
+					"Antwort": "Rubin",
+					"richtig": false
+				},
+				{
+					"Antwort": "Saphir",
+					"richtig": false
+				}
+			]
+		},
+		{
+			"Frage": "Wie heißt der Gott aller Pokemon?",
+			"type": "eingabe",
+			"Antwort": "Arceus"
+		},
+		{
+			"Frage": "Wie viele Pokemon umfasst die erste Generation?",
+			"type": "schaetzung",
+			"Antwort": 151,
+			"Toleranz": 5
+		},
+		{
+			"Frage": "Wie heißt der Professor in der zweiten Generation?",
+			"type": "eingabe",
+			"Antwort": "Lind"
+		},
+		{
+			"Frage": "Welches sind die drei Starter-Pokemon in der dritten Generation?",
+			"type": "auswahl",
+			"Antworten": [
+				{
+					"Antwort": "Bisasam, Glumanda & Schiggy",
+					"richtig": false
+				},
+				{
+					"Antwort": "Endivie, Feurigel & Karnimani",
+					"richtig": false
+				},
+				{
+					"Antwort": "Serpifeu, Floink & Ottaro",
+					"richtig": false
+				},
+				{
+					"Antwort": "Igamaro, Fynx & Froxy",
+					"richtig": false
+				},
+				{
+					"Antwort": "Geckarbor, Flemmli & Hydropi",
+					"richtig": true
+				},
+				{
+					"Antwort": "Chelast, Panflam & Plinfa",
+					"richtig": false
+				},
+				{
+					"Antwort": "Bauz, Flamiau & Robball",
+					"richtig": false
+				}
+			]
+		},
+		{
+			"Frage": "Wie viele Pokemon gibt es aktuell?",
+			"type": "schaetzung",
+			"Antwort": "807",
+			"Toleranz": 50
+		},
+		{
+			"Frage": "Wie heißt der treue Weggefährte von Ash?",
+			"type": "eingabe",
+			"Antwort": "Pikachu"
+		}
+	]
+}
