@@ -24,7 +24,7 @@
         {
             "Frage": "Wie heißt das gefährlichste neutrale Monster in der Kluft?",
             "type": "eingabe",
-            "Antwort": "Baron Nashor"
+            "Antwort": "Baron Nashor;Baron;Nash"
         },
         {
             "Frage": "Wie viele Spieler können maximal zusammen in eine Queue gehen?",

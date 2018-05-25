@@ -39,7 +39,7 @@
 		{
 			"Frage": "Wie heißt der Professor in der zweiten Generation?",
 			"type": "eingabe",
-			"Antwort": "Lind"
+			"Antwort": "Lind;Professor Lind;Prof Lind;Prof. Lind"
 		},
 		{
 			"Frage": "Welches sind die drei Starter-Pokemon in der dritten Generation?",
