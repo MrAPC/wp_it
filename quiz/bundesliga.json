@@ -35,7 +35,7 @@
 		{
 			"Frage": "Welcher Verein stieg in der Saison 17/18 zum ersten Mal in die zweite Liga ab?",
 			"type": "eingabe",
-			"Antwort": "Hamburger SV"
+			"Antwort": "Hamburger SV;HSV;Hamburger Sport Verein"
 		},
 		{
 			"Frage": "In welchen Verband ist die Bundesliga eingegliedert?",

@@ -35,6 +35,10 @@ Element.prototype.quizJS = function (params) {
 
     var kartenkoerper = document.createElement("div");
     kartenkoerper.classList.add("card-body");
+
+    var quizform = document.createElement("form");
+    kartenkoerper.append(quizform);
+
     karte.append(kartenkoerper);
     var jfile = $.getJSON(params.fragen, function (json) {
         console.log(json.Namen);
@@ -48,7 +52,7 @@ Element.prototype.quizJS = function (params) {
             var frage_text = document.createElement("label");
             frage_text.innerHTML = val.Frage;
             frage.append(frage_text);
-            kartenkoerper.append(frage);
+            quizform.append(frage);
             console.log(i + ' - ' + val.type);
             if (val.type == "auswahl") {
                 var auswahl = document.createElement("select");
@@ -82,6 +86,10 @@ Element.prototype.quizJS = function (params) {
     var kartenfuss = document.createElement("div");
     kartenfuss.classList.add("card-footer");
 
+    var punktestand = document.createElement("div");
+    punktestand.id = "punktestand";
+    kartenkoerper.append(punktestand);
+
     var submitbutton = document.createElement("button");
     submitbutton.id = "submitquiz";
     submitbutton.classList.add("btn");
@@ -90,9 +98,14 @@ Element.prototype.quizJS = function (params) {
     kartenfuss.append(submitbutton);
     karte.append(kartenfuss);
 
+    //Antworten überprüfen
     $('#submitquiz').click(function () {
+        var fragengesamt = 0;
+        var fragenrichtig = 0;
+
         console.log("Quiz abgegeben");
         $('.antwort').each(function (index) {
+            fragengesamt += 1;
             console.log($(this).val());
             var fr = allefragen[index];
             console.log(fr);
@@ -104,6 +117,7 @@ Element.prototype.quizJS = function (params) {
                 console.log(richtig[0].Antwort);
                 if ($(this).val() == richtig[0].Antwort) {
                     console.log("== richtige Antwort == ");
+                    fragenrichtig += 1;
                 } else {
                     $(this).addClass("is-invalid");
                     var wrongcallback = document.createElement("div")
@@ -112,9 +126,17 @@ Element.prototype.quizJS = function (params) {
                     $(this).parent().append(wrongcallback);
                 }
             } else if (fr.type == "eingabe") {
-                var richtig = fr.Antwort;
-                if ($(this).val() == richtig) {
+                var erlaubteAntworten = [];
+                var richtig = fr.Antwort.toLowerCase();
+                //Splitten der Antwort falls mehrere Existieren
+                if (richtig.includes(";")) {
+                    richtig.split(";").forEach(function (item) {
+                        erlaubteAntworten.push(item.toLowerCase());
+                    });
+                }
+                if ($(this).val().toLowerCase() == richtig || erlaubteAntworten.includes($(this).val().toLowerCase())) {
                     console.log("== richtige Antwort == ");
+                    fragenrichtig += 1;
                 } else {
                     $(this).addClass("is-invalid");
                     var wrongcallback = document.createElement("div")
@@ -126,6 +148,7 @@ Element.prototype.quizJS = function (params) {
                 var richtig = fr.Antwort;
                 if ($(this).val() >= richtig - fr.Toleranz && $(this).val() <= richtig + fr.Toleranz) {
                     console.log("== richtige Antwort == ");
+                    fragenrichtig += 1;
                 } else {
                     $(this).addClass("is-invalid");
                     var wrongcallback = document.createElement("div")
@@ -134,7 +157,26 @@ Element.prototype.quizJS = function (params) {
                     $(this).parent().append(wrongcallback);
                 }
             }
-        });
+        }); //Fertig durch die Antworten
+
+        //Deaktivieren des Quiz
+        var elements = quizform.elements;
+        for (var i = 0, len = elements.length; i < len; ++i) {
+            elements[i].readOnly = true;
+        }
+
+        var antworttext = document.createElement("p");
+        antworttext.innerText = fragenrichtig + " von " + fragengesamt + " Richtig beantwortet";
+        punktestand.append(antworttext);
+
+        var restartButton = document.createElement("a");
+        restartButton.href = "javascript:location.reload();";
+        restartButton.classList.add("btn");
+        restartButton.classList.add("btn-success");
+        restartButton.innerText = "Neustart";
+        kartenfuss.append(restartButton);
+
+        $(this).remove();
     })
     return true;
 };
